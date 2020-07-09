@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitline</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="overlay" id="overlay">
+        <h3>Searching now...</h3>
+    </div> 
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">yummy.eats</a>
+            </header>
+
+            <h1><span>The Healthy</span> Eating Experience</h1>
+
+            <p> Fitness matters, wellness works </p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter your city:</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "NEW DELHI"</p>
+                    </div>
+
+                    <input type="button" value="Find Food Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome.</h2>
+            <p> “Health is Wealth” is a common and very famous saying that intents to specify how important health is for humans. “Health” in context to human means a state of human body which is free from any illness or injury. A healthy body and mind is an invaluable asset that one can have. If one is not healthy, then wealth is of no importance. If one is healthy, he or she can always work on to get wealth, however wealth without good health is worthless. Good Health brings us happiness, pleasure and wellbeing. Thus one should always work towards being healthy and adopt healthy lifestyle. </p>
+        </div>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/food.jpg" alt="Picture of food in a bowl">
+    </section>
+
+    <script>
+
+let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+
+
+
+    </script>
+
+</body>
+</html> 
